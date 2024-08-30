@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Pay Oficial</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Card Principal -->
+    <div class="card fixed-card">
+        <img src="imagens/logo yt.png" alt="Imagem de Boas-Vindas" class="card-img">
+        <div class="card-red">
+            <p class="card-red-text" id="cardRedText">R$ 99,50</p>
+        </div>
+    </div>
+    
+
+    <!-- Card de Avaliação -->
+    <div class="feedback-card">
+        <h1>Avalie e Ganhe R$ 70,50</h1>
+        <img src="imagens/rezende.jpg" alt="Imagem de Feedback" class="feedback-img">
+        
+        <form id="feedback-form">
+            <div class="question">
+                <p>De 0 a 10 como você classifica o conteúdo do canal do <strong>Rezende?</strong></p>
+                <div class="boxes">
+                    <input type="radio" id="box1" name="rating" value="1">
+                    <label for="box1">1</label>
+                    <input type="radio" id="box2" name="rating" value="2">
+                    <label for="box2">2</label>
+                    <input type="radio" id="box3" name="rating" value="3">
+                    <label for="box3">3</label>
+                    <input type="radio" id="box4" name="rating" value="4">
+                    <label for="box4">4</label>
+                    <input type="radio" id="box5" name="rating" value="5">
+                    <label for="box5">5</label>
+                    <input type="radio" id="box6" name="rating" value="6">
+                    <label for="box6">6</label>
+                    <input type="radio" id="box7" name="rating" value="7">
+                    <label for="box7">7</label>
+                    <input type="radio" id="box8" name="rating" value="8">
+                    <label for="box8">8</label>
+                    <input type="radio" id="box9" name="rating" value="9">
+                    <label for="box9">9</label>
+                    <input type="radio" id="box10" name="rating" value="10">
+                    <label for="box10">10</label>
+                </div>
+
+                <div class="question">
+                    <p>Você recomendaria o canal do Rezende para <strong>amigos</strong> ou <strong>familiares?</strong></p>
+                    <div class="boxes">
+                        <input type="radio" id="recommend-yes" name="recommend" value="yes">
+                        <label for="recommend-yes"><span>Sim</span></label>
+                        
+                        <input type="radio" id="recommend-no" name="recommend" value="no">
+                        <label for="recommend-no"><span>Não</span></label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>Você considera o conteúdo do Rezende impróprio para <strong>menores de 18 anos?</strong></p>
+                    <div class="boxes">
+                        <input type="radio" id="age-yes" name="age" value="yes">
+                        <label for="age-yes"><span>Sim</span></label>
+                        
+                        <input type="radio" id="age-no" name="age" value="no">
+                        <label for="age-no"><span>Não</span></label>
+                    </div>
+                </div>
+                
+                <button type="button" id="submit-btn" class="submit-btn">Enviar Avaliação</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Popup que aparece após a avaliação -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>Você recebeu <span id="ganho-value" style="font-weight: bold;">R$ 70,50</span> por esta avaliação!</p>
+        </div>
+    </div>
+    <audio id="success-audio" src="sons/som_da_kiwify.mp3"></audio>
+    
+    
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Youtube Pay. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

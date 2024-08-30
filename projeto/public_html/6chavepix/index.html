@@ -1,0 +1,488 @@
+
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css2.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="css2-1.html" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    </head><body><audio id="meuAudio"><source src="media/dinheiro.mp3" type="audio/mp3"></audio>
+     <title> Youtube Pay Oficial</title>
+
+  
+  <!--------------------- Conteúdo do "Início" --------------------->
+
+
+  
+  <div id="inicio" style="display: none;">
+
+        <div class="menu">
+          <a style="width: 50%; ">
+            <img src="images/OPINE_CASH_2.png">
+          </a>
+          <div style="width: 45%;" class="buttons-container" href="#" onclick="mostrarPagina('saque')">
+            <div class="valor-box">
+              <span id="valor" style="font-family: 'Montserrat', sans-serif; max-width: 100%;">R$ 118,00118.30</span>
+            </div>
+          </div>
+        </div>
+    
+    <!--------------------- Limite atingido --------------------->
+    
+    
+  
+    <div class="popup-containerL" id="popupL">
+
+      <div id="container-progresso" style="display: flex; margin: 0 auto; width: 300px; height: 300px;">
+          <svg viewBox="0 0 36 36" id="barra-progresso-svg">
+              <circle cx="18" cy="18" r="16" fill="none" stroke="#ccc" stroke-width="3"></circle>
+              <circle cx="18" cy="18" r="16" fill="none" stroke="#4285F4" stroke-width="3" id="minha-barra-progresso" stroke-dasharray="0 1000"></circle>
+          </svg>
+      
+          <div id="texto-progresso">
+              <span id="valor-saque" style="font-family: 'Montserrat', sans-serif; font-size: 23px;">R$ 118.30</span>
+              <span style="font-family: 'Montserrat', sans-serif; color: #202020; font-size: 14px;">Seu saldo subiu!</span>
+          </div>
+      </div>
+      
+      
+
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #28a745; text-align: center; margin-top: 15px; margin-bottom: -5px;">Parabéns!</p>      
+
+      <p class="popup-textL" style="margin-bottom: 20px; font-size: 18px; color: #636363">Você atingiu seu<br>limite diário!</p>
+      
+    
+      <button class="desbloquear-button" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;" href="#" onclick="mostrarPagina('saque')">SAQUE AGORA</button>
+      
+      
+    </div>
+    
+
+
+    
+    <!--------------------- Menu debaixo --------------------->
+
+    
+    <div style="margin-bottom: 80px;"></div>
+
+    
+    <div class="menuemb">
+      <!-- Chamando a função para mostrar "Início" -->
+      <a href="#" onclick="mostrarPagina('saque')">
+        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(255, 255, 255);">paid</span>
+      </a>
+    </div>
+  </div>
+
+
+  
+  <!--------------------- Conteúdo do "Saque" --------------------->
+<style>
+            .corteLayoutTop {
+        width: 100%;
+        height: 153px;
+        background: #ffffff;
+        border-radius: 592px / 41px;
+        position: absolute;
+        top: -69px;
+    }
+    img {
+        border-style: none;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .valorSaldo {
+        margin: -17px 0 0 12px;
+        font-family: 'PoppinsSemiBold';
+        color: #000000;
+    }
+    
+    /* SALDO FUNIL */
+    .boxSaldo{
+        width: auto;
+        height: 40px;
+        border: 2px solid #ffffff;
+        margin-right: 25px;
+        margin-top: 7px;
+        border-radius: 6px;
+        padding: 0 20px 0 10px;
+        position: relative;
+        float: right;
+    }
+    
+        </style>
+
+  <div id="saque" style="display: block;">
+    <div class="corteLayoutTop"></div>
+    <div id="p1" style="justify-content: center; background-color: #f0f0f0; padding: 15px 0 18px 0;">
+
+        <img style="justify-content: center; width: 35%; margin: auto; margin-left: 130px; position: relative; margin-top: 10px;" src="imagens/yotube%20logo.png">
+
+
+        </div>
+
+    <div style="margin-bottom: 50px;"></div>
+      
+    
+    <div class="outer-box">
+      <div class="valor-box-saque">
+          <p style="font-size: 16px; margin-bottom: 15px; text-align: center; color: rgb(0, 0, 0);">Seu saldo</p>
+          <span id="valor-money" style="font-size: 45px; text-align: center; font-family: 'Montserrat', sans-serif; letter-spacing: -2px; color: #ff0000;">R$ 99,50</span>
+      </div>
+    </div>
+
+    <p style="margin-bottom: 18px; margin-top: 23px; color: rgb(0, 0, 0); text-align: center; font-weight: bold;">Selecione seu tipo de chave PIX</p>
+
+    
+    <div class="button-container">
+      
+      <button class="square-button" onclick="toggleButton(1)">
+        <img decoding="async" src="imagens/cpf.png" alt="Botão 1">
+      </button>
+      
+      <button class="square-button" onclick="toggleButton(2)">
+        <img decoding="async" src="imagens/telefone.png" alt="Botão 2">
+      </button>
+      
+      <button class="square-button" onclick="toggleButton(3)">
+        <img decoding="async" src="imagens/email.png" alt="Botão 3">
+      </button>
+      
+      <button class="square-button" onclick="toggleButton(4)">
+        <img decoding="async" src="imagens/qr.png" alt="Botão 4">
+      </button>
+
+    </div>
+
+    <div style="margin-bottom: 15px;"></div>
+        
+    <!--------------------- MENU EMBAIXO --------------------->
+
+    <input class="form-input" type="text" name="chave-pix" id="chave-pix" placeholder="Digite sua chave PIX aqui">
+
+  
+    <a href="/tudo junto/7rezende/index.html" class="desbloquear-button" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;"><p>CADASTRAR CHAVE PIX</p></a>
+  
+  <!--------------------- TAXA DESBLOQUEIO --------------------->
+  
+  
+  <script>
+const saqueDiv = document.getElementById('saque');
+
+function playAudio() {
+    var audio = document.getElementById("meuAudio");
+    audio.play();
+}
+
+// FunÃ§Ã£o para definir um cookie
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    const expires = `expires=${d.toUTCString()}`;
+    document.cookie = `${cname}=${cvalue}; ${expires}; path=/`;
+}
+
+// FunÃ§Ã£o para obter o valor de um cookie
+function getCookie(cname) {
+    const name = `${cname}=`;
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return '';
+}
+
+let valor = parseFloat(getCookie('valor')) || 118.30;
+const valorSpan = document.getElementById('valor');
+const valorSpanSaque = document.getElementById('valor-saque');
+const valorSpanMoney = document.getElementById('valor');
+
+function atualizarValor() {
+    valorSpan.textContent = `R$ ${valor.toFixed(2)}`;
+    valorSpanSaque.textContent = `R$ ${valor.toFixed(2)}`;
+    valorSpanMoney.textContent = `R$ 118,00${valor.toFixed(2)}`;
+    setCookie('valor', valor.toFixed(2), 365); // Armazena o valor como um cookie vÃ¡lido por 1 ano
+}
+
+atualizarValor(); // Atualiza o valor inicial na caixa de valor
+
+// Array com os valores desejados
+const valoresDesejados = [33, 34, 47, 43, 52, 32, 32, 27, 30, 43];
+
+// FunÃ§Ã£o para aumentar o valor
+function aumentarValor() {
+    // Se ainda houver valores no array
+    if (valoresDesejados.length > 0) {
+        // Retira o prÃ³ximo valor do array
+        const valorIncremento = valoresDesejados.shift();
+
+        // Adiciona o valor ao total
+        valor += valorIncremento;
+
+        // Atualiza e verifica o valor
+        atualizarValor();
+        verificarValor();
+    }
+}  
+
+function mostrarPagina(pagina) {
+  inicioDiv.style.display = pagina === 'inicio' ? 'block' : 'none';
+  saqueDiv.style.display = pagina === 'saque' ? 'block' : 'none';
+  loginDiv.style.display = pagina === 'login' ? 'block' : 'none';
+  bonusDiv.style.display = pagina === 'bonus' ? 'block' : 'none';
+}
+
+function trocarDiv(esconderId, mostrarId) {
+  document.getElementById(esconderId).style.display = 'none';
+  document.getElementById(mostrarId).style.display = 'block';
+}
+
+// Atualizar o valor exibido inicialmente
+atualizarValor();
+
+
+//---------------------------- BotÃ£o chave PIX ---------------------------
+ 
+ 
+let activeButton = null;
+
+function toggleButton(buttonNumber) {
+  const buttons = document.querySelectorAll('.square-button');
+
+  if (activeButton !== null) {
+   buttons[activeButton - 1].classList.remove('active');
+  }
+
+  if (activeButton === buttonNumber) {
+    activeButton = null;
+  } else {
+    buttons[buttonNumber - 1].classList.add('active');
+    activeButton = buttonNumber;
+  }
+} 
+ 
+ 
+
+// Popup SAQUE
+
+function showPopup() {
+  document.getElementById('popup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}  
+
+// Popup LIMITE DIÃRIO
+
+function showPopupL() {
+  document.getElementById('popupL').style.display = 'block';
+}
+
+function closePopupL() {
+  document.getElementById('popupL').style.display = 'none';
+}  
+
+
+
+
+
+
+
+
+      
+function toggleAnswer(question) {
+    const answer = question.nextElementSibling;
+    answer.classList.toggle("active");
+  
+    const allQuestions = document.querySelectorAll(".question");
+    allQuestions.forEach((otherQuestion) => {
+      if (otherQuestion !== question) {
+        otherQuestion.nextElementSibling.classList.remove("active");
+      }
+    });
+  }
+  
+  
+  
+  // ----------------- TESTE ANUNCIO 1 -----------------
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initializeRatingContainers();
+});
+
+function initializeRatingContainers() {
+    const containers = document.querySelectorAll('.rating-container');
+
+    containers.forEach(function (container) {
+        const buttons = container.querySelectorAll('.rating-button');
+
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                buttons.forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+
+                button.classList.add('active');
+            });
+        });
+    });
+
+    addClickEventToCards(); // Adiciona eventos de clique aos elementos existentes
+}
+
+function addClickEventToCards() {
+    const cards = document.querySelectorAll('.card__grade');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function () {
+            toggleCard(this);
+        });
+    });
+}
+
+function toggleCard(clickedElement) {
+    console.log("Clique detectado em:", clickedElement.id);
+
+    const allCards = document.querySelectorAll('.card__grade');
+
+    allCards.forEach(card => {
+        card.classList.remove('active');
+    });
+
+    // Adicione um switch para lidar com diferentes ações
+    switch (clickedElement.id) {
+        case 'card__grade1':
+        case 'star1':
+            console.log("Caso 1");
+            updateStars('star1', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star2', 'fa-regular fa-star', '#7e7e7e');
+            updateStars('star3', 'fa-regular fa-star', '#7e7e7e');
+            updateStars('star4', 'fa-regular fa-star', '#7e7e7e');
+            updateStars('star5', 'fa-regular fa-star', '#7e7e7e');
+            break;
+        case 'card__grade2':
+        case 'star2':
+            console.log("Caso 2");
+            updateStars('star1', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star2', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star3', 'fa-regular fa-star', '#7e7e7e');
+            updateStars('star4', 'fa-regular fa-star', '#7e7e7e');
+            updateStars('star5', 'fa-regular fa-star', '#7e7e7e');
+            break;
+        case 'card__grade3':
+        case 'star3':
+            console.log("Caso 3");
+            updateStars('star1', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star2', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star3', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star4', 'fa-regular fa-star', '#7e7e7e');
+            updateStars('star5', 'fa-regular fa-star', '#7e7e7e');
+            break;
+        case 'card__grade4':
+        case 'star4':
+            console.log("Caso 4");
+            updateStars('star1', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star2', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star3', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star4', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star5', 'fa-regular fa-star', '#7e7e7e');
+            break;
+        case 'card__grade5':
+        case 'star5':
+            console.log("Caso 5");
+            updateStars('star1', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star2', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star3', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star4', 'fa-solid fa-star active', '#ffd700');
+            updateStars('star5', 'fa-solid fa-star active', '#ffd700');
+            break;
+            case 'card__grade6':
+                case 'star1':
+                    console.log("Caso 1");
+                    updateStars('star1', 'fa-solid fa-star active', '#ffd700');
+                    updateStars('star2', 'fa-regular fa-star', '#7e7e7e');
+                    updateStars('star3', 'fa-regular fa-star', '#7e7e7e');
+                    updateStars('star4', 'fa-regular fa-star', '#7e7e7e');
+                    updateStars('star5', 'fa-regular fa-star', '#7e7e7e');
+                    break;
+        // Adicione mais casos conforme necessário
+        default:
+            // Ação padrão, se nenhum caso corresponder
+            console.log("Nenhum caso correspondente");
+    }
+}
+
+function updateStars(elementId, className, color) {
+    const starElement = document.getElementById(elementId);
+    if (starElement) {
+        starElement.className = className;
+        starElement.style.color = color;
+    } else {
+        console.error("Elemento não encontrado com ID: " + elementId);
+    }
+}
+
+
+function addClickEventToNewCards() {
+    const newCards = document.querySelectorAll('#bradesco .card__grade');
+
+    newCards.forEach(card => {
+        card.addEventListener('click', function () {
+            toggleCard(this);
+        });
+    });
+}
+
+
+
+$(function() {
+  
+  $(document).on({
+    mouseover: function(event) {
+      $(this).find('.far').addClass('star-over');
+      $(this).prevAll().find('.far').addClass('star-over');
+    },
+    mouseleave: function(event) {
+      $(this).find('.far').removeClass('star-over');
+      $(this).prevAll().find('.far').removeClass('star-over');
+    }
+  }, '.rate');
+
+
+  $(document).on('click', '.rate', function() {
+    if ( !$(this).find('.star').hasClass('rate-active') ) {
+      $(this).siblings().find('.star').addClass('far').removeClass('fas rate-active');
+      $(this).find('.star').addClass('rate-active fas').removeClass('far star-over');
+      $(this).prevAll().find('.star').addClass('fas').removeClass('far star-over');
+    } else {
+      console.log('has');
+    }
+  });
+  
+});
+
+
+  </script>
+  
+
+
+
+
+<!-- Script Utms -->
+
+
+
+</div></body></html>

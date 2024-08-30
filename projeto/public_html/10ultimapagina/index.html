@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Pay Oficial</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Card Principal -->
+    <div class="card fixed-card">
+        <img src="imagens/logo yt.png" alt="Imagem de Boas-Vindas" class="card-img">
+    
+    </div>
+    
+
+    <!-- Card de Avaliação -->
+    <div class="feedback-card">
+        <h1>Atenção!!!</h1>
+        
+        
+        <form id="feedback-form">
+            <div class="question">
+                
+               
+
+                <div class="question">
+                    <p>Para receber seu lucro de <strong class="highlight">R$ 287,00</strong> basta realizar seu cadastro no botão abaixo e pagar uma taxa de cadastro! no valor de <strong class="highlight">R$ 19,90</strong>.</p>
+
+                    
+                </div>
+
+                <div class="question">
+                    <p>Essa taxa serve para confirmar de que o processo de avaliação não está sendo feito por um robô.
+
+                <div class="question">
+                    <p> Mais fique tranquilo(a) este valor de <strong class="highlight">19,90</strong> irá retornar para sua conta junto com seu Saque de <strong class="highlight">R$ 287,00</strong></p>
+                </div>
+                
+                <button type="button" id="submit-btn" class="submit-btn">Pagar a Taxa e Receber meu Saldo</button>
+            </div>
+        </form>
+    </div>
+
+    
+
+    <!-- Popup que aparece após a avaliação -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>Você recebeu <span id="ganho-value" style="font-weight: bold;">R$ 33,00</span> por esta avaliação!</p>
+        </div>
+    </div>
+    <audio id="success-audio" src="sons/som_da_kiwify.mp3"></audio>
+    
+    
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Youtube Pay. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

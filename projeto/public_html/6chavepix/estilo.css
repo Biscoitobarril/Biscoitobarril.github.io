@@ -1,0 +1,271 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(images/background_whats.jpg);
+}
+
+
+.square-button img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
+img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+}
+folha de estilo do user agent
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.square-button {
+    border-radius: 12px;
+    border: none;
+    aspect-ratio: 1 / 1;
+    margin: 5px;
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+folha de estilo do user agent
+button {
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.square-button.active {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
+
+.button-container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+folha de estilo do user agent
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.valor-box-saque {
+    width: 99%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    align-items: center;
+    line-height: 20px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.outer-box {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+folha de estilo do user agent
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+folha de estilo do user agent
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+element.style {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+folha de estilo do user agent
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+element.style {
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2px;
+    color: #ff0000;
+}
+#valor-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.form-input {
+    border: 1px solid #202020;
+    height: 40px;
+    line-height: 40px;
+}
+.form-label, .form-input {
+    border-radius: 12px;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+}
+folha de estilo do user agent
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+folha de estilo do user agent
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+folha de estilo do user agent
+input {
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+.desbloquear-button {
+    background-color: #ff0000;
+    width: 90%;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+folha de estilo do user agent
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.desbloquear-button p {
+    transform: translateY(10px);
+}
+folha de estilo do user agent
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.button-container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+folha de estilo do user agent
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
